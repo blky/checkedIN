@@ -46,19 +46,12 @@ class ControlViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "toEvent" {
-            println("\n[ toEvent]>>>>>> \(__FILE__.pathComponents.last!) >> \(__FUNCTION__) < \(__LINE__) >")
             
         } else if segue.identifier == "toSignUp" {
-            println("\n[toSignup]>>>>>> \(__FILE__.pathComponents.last!) >> \(__FUNCTION__) < \(__LINE__) >")
         } else if segue.identifier == "toMyEvents" {
-            println("\n[to my events after login]>>>>>> \(__FILE__.pathComponents.last!) >> \(__FUNCTION__) < \(__LINE__) >")
         } else {
-            println("\n[else ]>>>>>> \(__FILE__.pathComponents.last!) >> \(__FUNCTION__) < \(__LINE__) >")
         }
-        
-        
-        
-        
+
     }
     @IBAction func loginwithUser(sender: AnyObject) {
         loginToParse()
@@ -72,9 +65,7 @@ class ControlViewController: UIViewController {
                 var user = i as parseUser
                  println("user are \(user.username) , and screenname \(user.screenName!),  in zipcode \(user.zipcode!)")
             }
-            
         }
-
     }
     
     
@@ -105,7 +96,5 @@ class ControlViewController: UIViewController {
              }
         }
     }
- 
-     
 
 }
