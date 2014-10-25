@@ -8,14 +8,25 @@ class EventDetailViewController: UIViewController {
     @IBOutlet weak var labelMaxRsvped: UILabel!
     @IBOutlet weak var buttonunRSVP: UIButton!
     @IBOutlet weak var buttonCheckedIn: UIButton!
+    @IBOutlet weak var buttonRSVP: UIButton!
+    
+    
     
     var eventNameAndRsvped:NSDictionary?
     var eventName:String!
     var isRsvped:Bool!
     
+    @IBAction func onRsvp(sender: AnyObject) {
+        
+        //println("onrsvp")
+    }
+    
+    
+    
     @IBAction func removeRSVP(sender: AnyObject) {
         
-        
+        //println("unrsvp")
+
         
     }
     
@@ -33,19 +44,22 @@ class EventDetailViewController: UIViewController {
         
         buttonCheckedIn.alpha = 0
         buttonunRSVP.alpha = 0
+        buttonRSVP.alpha = 0
         
         if eventNameAndRsvped != nil {
             
             self.eventName = eventNameAndRsvped?.objectForKey("eventName")  as String?
             self.isRsvped = eventNameAndRsvped?.objectForKey("isRsvped")  as   Bool?
-            buttonunRSVP.alpha = 1
-            buttonCheckedIn.alpha = 1
+            
+            if isRsvped! {
+                 buttonunRSVP.alpha = 1
+                buttonCheckedIn.alpha = 1
+            } else {
+                buttonRSVP.alpha = 1
+            }
         }
         
-//        buttonunRSVP.enabled = isRsvped
-//        buttonCheckedIn.enabled = isRsvped
-//        
-        if  self.isRsvped! && eventName != nil   {
+        if  eventName != nil   {
             fetchTheEvents(eventName)
 
         }
