@@ -34,23 +34,4 @@ class parseEvent : PFObject,PFSubclassing {
     
 
     
-//    
-//    var fromUser: ChatUser? {
-//        get { return objectForKey("fromUser") as? ChatUser }
-//        set { setObject(newValue, forKey: "toUser") }
-//    }
-//    var toUser: ChatUser? {
-//        get { return objectForKey("toUser") as? ChatUser }
-//        set { setObject(newValue, forKey: "fromUser") }
-//    }
-//    var image: PFFile? {
-//        get { return objectForKey("image") as? PFFile }
-//        set { setObject(newValue, forKey: "image") }
-//    }
-//    var phoneNumber : String? {
-//        get { return objectForKey("additional") as String? }
-//        set { setObject(newValue, forKey: "additional") }
-//    }
-
-    
 }
