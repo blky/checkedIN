@@ -50,6 +50,8 @@ class ControlViewController: UIViewController {
             
         } else if segue.identifier == "toSignUp" {
             println("\n[toSignup]>>>>>> \(__FILE__.pathComponents.last!) >> \(__FUNCTION__) < \(__LINE__) >")
+        } else if segue.identifier == "toMyEvents" {
+            println("\n[to my events after login]>>>>>> \(__FILE__.pathComponents.last!) >> \(__FUNCTION__) < \(__LINE__) >")
         } else {
             println("\n[else ]>>>>>> \(__FILE__.pathComponents.last!) >> \(__FUNCTION__) < \(__LINE__) >")
         }

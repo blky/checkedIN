@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F06E05719FAEB9000EEF482 /* rsvpEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06E05619FAEB9000EEF482 /* rsvpEventViewController.swift */; };
+		8F06E05919FAEC3800EEF482 /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F06E05819FAEC3800EEF482 /* signInViewController.swift */; };
 		8F245D8019FA03430086A4FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245D7F19FA03430086A4FD /* AppDelegate.swift */; };
 		8F245D8219FA03430086A4FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245D8119FA03430086A4FD /* ViewController.swift */; };
 		8F245D8519FA03430086A4FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F245D8319FA03430086A4FD /* Main.storyboard */; };
@@ -14,7 +16,6 @@
 		8F245D8A19FA03430086A4FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F245D8819FA03430086A4FD /* LaunchScreen.xib */; };
 		8F245D9619FA03430086A4FD /* parseOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245D9519FA03430086A4FD /* parseOperationTests.swift */; };
 		8F245DA519FA050C0086A4FD /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245DA419FA050C0086A4FD /* ControlViewController.swift */; };
-		8F245DA719FA05370086A4FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245DA619FA05370086A4FD /* LoginViewController.swift */; };
 		8F245DA919FA05930086A4FD /* EventUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245DA819FA05930086A4FD /* EventUpdateViewController.swift */; };
 		8F245DAB19FA059E0086A4FD /* UserUpadteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245DAA19FA059E0086A4FD /* UserUpadteViewController.swift */; };
 		8F245DAD19FA06C50086A4FD /* parseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245DAC19FA06C50086A4FD /* parseEvent.swift */; };
@@ -22,6 +23,8 @@
 		8F85549719FA273500699EC3 /* iBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85549619FA273500699EC3 /* iBeacon.swift */; };
 		8F85549919FAB7FE00699EC3 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85549819FAB7FE00699EC3 /* signUpViewController.swift */; };
 		8F85549B19FACE7F00699EC3 /* myEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85549A19FACE7F00699EC3 /* myEventsViewController.swift */; };
+		8FDBA85019FAF670003E17B9 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDBA84F19FAF670003E17B9 /* EventDetailViewController.swift */; };
+		8FDBA85219FAF680003E17B9 /* AllEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDBA85119FAF680003E17B9 /* AllEventsViewController.swift */; };
 		CF4ED05812A655B9576D4FC7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2ECA34FAD0EB892409DE21 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,8 @@
 /* Begin PBXFileReference section */
 		1D5DCBE2B0A8C9C800B7B667 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4D6D2FEC1C9A307112099163 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8F06E05619FAEB9000EEF482 /* rsvpEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rsvpEventViewController.swift; sourceTree = "<group>"; };
+		8F06E05819FAEC3800EEF482 /* signInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInViewController.swift; sourceTree = "<group>"; };
 		8F245D7A19FA03430086A4FD /* parseOperation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parseOperation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F245D7E19FA03430086A4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F245D7F19FA03430086A4FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +55,6 @@
 		8F245D9519FA03430086A4FD /* parseOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parseOperationTests.swift; sourceTree = "<group>"; };
 		8F245D9F19FA048A0086A4FD /* parseOperation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "parseOperation-Bridging-Header.h"; sourceTree = "<group>"; };
 		8F245DA419FA050C0086A4FD /* ControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlViewController.swift; path = ../ControlViewController.swift; sourceTree = "<group>"; };
-		8F245DA619FA05370086A4FD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8F245DA819FA05930086A4FD /* EventUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventUpdateViewController.swift; sourceTree = "<group>"; };
 		8F245DAA19FA059E0086A4FD /* UserUpadteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserUpadteViewController.swift; sourceTree = "<group>"; };
 		8F245DAC19FA06C50086A4FD /* parseEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseEvent.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		8F85549619FA273500699EC3 /* iBeacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iBeacon.swift; sourceTree = "<group>"; };
 		8F85549819FAB7FE00699EC3 /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		8F85549A19FACE7F00699EC3 /* myEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myEventsViewController.swift; sourceTree = "<group>"; };
+		8FDBA84F19FAF670003E17B9 /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		8FDBA85119FAF680003E17B9 /* AllEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllEventsViewController.swift; sourceTree = "<group>"; };
 		CF2ECA34FAD0EB892409DE21 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,16 +124,19 @@
 				8F85549419FA238600699EC3 /* parseUser.swift */,
 				8F85549619FA273500699EC3 /* iBeacon.swift */,
 				8F245D8119FA03430086A4FD /* ViewController.swift */,
+				8FDBA84F19FAF670003E17B9 /* EventDetailViewController.swift */,
+				8FDBA85119FAF680003E17B9 /* AllEventsViewController.swift */,
 				8F85549A19FACE7F00699EC3 /* myEventsViewController.swift */,
 				8F85549819FAB7FE00699EC3 /* signUpViewController.swift */,
+				8F06E05819FAEC3800EEF482 /* signInViewController.swift */,
 				8F245DA419FA050C0086A4FD /* ControlViewController.swift */,
 				8F245DA819FA05930086A4FD /* EventUpdateViewController.swift */,
 				8F245DAA19FA059E0086A4FD /* UserUpadteViewController.swift */,
-				8F245DA619FA05370086A4FD /* LoginViewController.swift */,
 				8F245D8619FA03430086A4FD /* Images.xcassets */,
 				8F245D8819FA03430086A4FD /* LaunchScreen.xib */,
 				8F245D7D19FA03430086A4FD /* Supporting Files */,
 				8F245D9F19FA048A0086A4FD /* parseOperation-Bridging-Header.h */,
+				8F06E05619FAEB9000EEF482 /* rsvpEventViewController.swift */,
 			);
 			path = parseOperation;
 			sourceTree = "<group>";
@@ -303,14 +312,17 @@
 				8F85549919FAB7FE00699EC3 /* signUpViewController.swift in Sources */,
 				8F245DAB19FA059E0086A4FD /* UserUpadteViewController.swift in Sources */,
 				8F245DA919FA05930086A4FD /* EventUpdateViewController.swift in Sources */,
-				8F245DA719FA05370086A4FD /* LoginViewController.swift in Sources */,
+				8FDBA85019FAF670003E17B9 /* EventDetailViewController.swift in Sources */,
+				8F06E05719FAEB9000EEF482 /* rsvpEventViewController.swift in Sources */,
 				8F245D8219FA03430086A4FD /* ViewController.swift in Sources */,
 				8F85549519FA238600699EC3 /* parseUser.swift in Sources */,
 				8F245DAD19FA06C50086A4FD /* parseEvent.swift in Sources */,
 				8F85549719FA273500699EC3 /* iBeacon.swift in Sources */,
 				8F245DA519FA050C0086A4FD /* ControlViewController.swift in Sources */,
 				8F85549B19FACE7F00699EC3 /* myEventsViewController.swift in Sources */,
+				8FDBA85219FAF680003E17B9 /* AllEventsViewController.swift in Sources */,
 				8F245D8019FA03430086A4FD /* AppDelegate.swift in Sources */,
+				8F06E05919FAEC3800EEF482 /* signInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
