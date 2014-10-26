@@ -42,7 +42,6 @@ class ControlViewController: UIViewController {
             }
         }
     }
-        
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "toEvent" {
@@ -63,19 +62,17 @@ class ControlViewController: UIViewController {
             
             for i in allUsers {
                 var user = i as parseUser
-                 println("user are \(user.username) , and screenname \(user.screenName!),  in zipcode \(user.zipcode!)")
+                 println("user are \(user.username) and \(user.objectId), and screenname \(user.screenName!),  in zipcode \(user.zipcode!)")
             }
         }
     }
-    
-    
     @IBAction func listEvents(sender: AnyObject) {
         var events = parseEvent.query() as PFQuery
         events.findObjectsInBackgroundWithBlock { (objects: [AnyObject]!, error: NSError!) -> Void in
             for obj in objects {
               //  println(obj)
                 var event = obj as parseEvent
-                println("event name \(event.EventName!), city: \(event.cityName!), max rsvp count:\(event.rsvpMax!)")
+                println("event name \(event.EventName!), id \(event.objectId) city: \(event.cityName!), max rsvp count:\(event.rsvpMax!)")
             }
         }
     }

@@ -19,23 +19,24 @@ class AllEventsViewController:UIViewController, UITableViewDelegate, UITableView
         var refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(refreshControl)
-        tableView.reloadData()
+        refreshTableView()
     }
     override func viewWillAppear(animated: Bool) {
-        
-        fetchMyEvents()
-        fetchAllEvents()
+        refreshTableView()
     }
  
     func refresh( refreshControl : UIRefreshControl)
     {
         refreshControl.beginRefreshing()
         
-        tableView.reloadData()
+        refreshTableView()
         refreshControl.endRefreshing()
     }
 
-
+    func refreshTableView() {
+        fetchMyEvents()
+        fetchAllEvents()
+    }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -55,7 +56,7 @@ class AllEventsViewController:UIViewController, UITableViewDelegate, UITableView
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let event  = events?[indexPath.row] as parseEvent
-        var eventNameAndRsvped = [ "eventName": event.EventName!, "isRsvped" :isAlreadyRSVPed(event.EventName!) ]
+        var eventNameAndRsvped = [ "objectId": event.objectId, "isRsvped" :isAlreadyRSVPed(event.EventName!) ]
         performSegueWithIdentifier("toEventDetailsNotYetRSVPed", sender: eventNameAndRsvped )
     }
     
@@ -86,11 +87,7 @@ class AllEventsViewController:UIViewController, UITableViewDelegate, UITableView
                 if self.allMyEvents != nil {
                     self.tableView.reloadData()
 
-                } else {
-                    sleep (2)
-                    self.tableView.reloadData()
                 }
-                
                 
             } else {
                 println("fetch all events error \(error)")
@@ -105,12 +102,15 @@ class AllEventsViewController:UIViewController, UITableViewDelegate, UITableView
         relation.query().findObjectsInBackgroundWithBlock { (objects: [AnyObject]!, error: NSError!) -> Void in
             println("\n[ ]>>>>>> \(__FILE__.pathComponents.last!) >> \(__FUNCTION__) < \(__LINE__) >")
 
-            if error != nil {
-                println("error retrieving rsvped events")
-            } else {
+            if objects != nil {
                 self.allMyEvents = objects
-            
-             }
+                if self.events != nil {
+                    self.tableView.reloadData()
+                }
+                
+            } else {
+                println("fetch my all events error \(error)")
+            }
         }
     }
     

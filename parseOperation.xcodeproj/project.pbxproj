@@ -18,6 +18,7 @@
 		8F245DA919FA05930086A4FD /* EventUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245DA819FA05930086A4FD /* EventUpdateViewController.swift */; };
 		8F245DAB19FA059E0086A4FD /* UserUpadteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245DAA19FA059E0086A4FD /* UserUpadteViewController.swift */; };
 		8F245DAD19FA06C50086A4FD /* parseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245DAC19FA06C50086A4FD /* parseEvent.swift */; };
+		8F5DA9F219FC732100B2D0DB /* CheckedInEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5DA9F119FC732100B2D0DB /* CheckedInEventViewController.swift */; };
 		8F85549519FA238600699EC3 /* parseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85549419FA238600699EC3 /* parseUser.swift */; };
 		8F85549719FA273500699EC3 /* iBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85549619FA273500699EC3 /* iBeacon.swift */; };
 		8F85549919FAB7FE00699EC3 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85549819FAB7FE00699EC3 /* signUpViewController.swift */; };
@@ -57,6 +58,7 @@
 		8F245DA819FA05930086A4FD /* EventUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventUpdateViewController.swift; sourceTree = "<group>"; };
 		8F245DAA19FA059E0086A4FD /* UserUpadteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserUpadteViewController.swift; sourceTree = "<group>"; };
 		8F245DAC19FA06C50086A4FD /* parseEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseEvent.swift; sourceTree = "<group>"; };
+		8F5DA9F119FC732100B2D0DB /* CheckedInEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckedInEventViewController.swift; sourceTree = "<group>"; };
 		8F85549419FA238600699EC3 /* parseUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseUser.swift; sourceTree = "<group>"; };
 		8F85549619FA273500699EC3 /* iBeacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iBeacon.swift; sourceTree = "<group>"; };
 		8F85549819FAB7FE00699EC3 /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				8F85549619FA273500699EC3 /* iBeacon.swift */,
 				8F245D8119FA03430086A4FD /* ViewController.swift */,
 				8FDBA84F19FAF670003E17B9 /* EventDetailViewController.swift */,
+				8F5DA9F119FC732100B2D0DB /* CheckedInEventViewController.swift */,
 				8FDBA85119FAF680003E17B9 /* AllEventsViewController.swift */,
 				8F85549A19FACE7F00699EC3 /* myEventsViewController.swift */,
 				8F85549819FAB7FE00699EC3 /* signUpViewController.swift */,
@@ -311,6 +314,7 @@
 			files = (
 				8F85549919FAB7FE00699EC3 /* signUpViewController.swift in Sources */,
 				8F245DAB19FA059E0086A4FD /* UserUpadteViewController.swift in Sources */,
+				8F5DA9F219FC732100B2D0DB /* CheckedInEventViewController.swift in Sources */,
 				8F245DA919FA05930086A4FD /* EventUpdateViewController.swift in Sources */,
 				8FDBA85019FAF670003E17B9 /* EventDetailViewController.swift in Sources */,
 				8F06E05719FAEB9000EEF482 /* rsvpEventViewController.swift in Sources */,

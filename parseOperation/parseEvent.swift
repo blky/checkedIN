@@ -14,6 +14,7 @@ class parseEvent : PFObject,PFSubclassing {
         return PFQuery(className: "Event")
     }
     
+     
     var EventName:String? {
         get {return objectForKey("EventName") as String? }
         set {setObject(newValue, forKey: "EventName") }

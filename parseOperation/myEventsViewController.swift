@@ -10,7 +10,17 @@ class myEventsViewController: UIViewController, UITableViewDelegate, UITableView
         self.title =   "RSVPed Events"
         tableView.delegate = self
         tableView.dataSource = self
+        var refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView.addSubview(refreshControl)
+     }
+    override func viewWillAppear(animated: Bool) {
         fetchMyEvents()
+    }
+    func refresh( refreshControl : UIRefreshControl)
+    {   refreshControl.beginRefreshing()
+        fetchMyEvents()
+        refreshControl.endRefreshing()
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         println("number of cell: \(events?.count ?? 0)")
@@ -18,7 +28,7 @@ class myEventsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let event  = events?[indexPath.row] as parseEvent
-        var eventNameAndRsvped = [ "eventName": event.EventName!, "isRsvped" :true ]
+        var eventNameAndRsvped = [ "objectId": event.objectId, "isRsvped" :true ]
         
         performSegueWithIdentifier("toEventDetail", sender: eventNameAndRsvped )
     }
