@@ -46,6 +46,7 @@ class EventDetailViewController: UIViewController , UIAlertViewDelegate {
      @IBAction func back(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
         //self.dismissViewControllerAnimated(true , completion: nil)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         customizeUI()
         Parse.setApplicationId("flC9eMzZehG2eu0TBYUn6JqiIvw0maaJn7FEWOsH", clientKey: "ioAQpL7FN7aNagtmxhWCc0xdqJOuofhMdHF0Ftvb")
 
+        
         return true
     }
     func customizeUI(){
@@ -31,8 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Navigation bar R:108 G:122 B:137
         UINavigationBar.appearance().barTintColor = UIColor(red: 108/255, green: 122/255, blue: 137/255, alpha: 1)
         //Regular buttons background R:63 G:195 B:168
-//        UIButton.appearance().tintColor = UIColor.whiteColor()
-//        UIButton.appearance().backgroundColor = UIColor(red: 63/255, green: 195/255, blue: 168/255, alpha: 1)
+        UIButton.appearance().tintColor = UIColor.whiteColor()
+        UIButton.appearance().backgroundColor = UIColor(red: 63/255, green: 195/255, blue: 168/255, alpha: 1)
     }
     
 

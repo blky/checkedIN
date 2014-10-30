@@ -19,10 +19,13 @@
 		8F245DAB19FA059E0086A4FD /* UserUpadteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245DAA19FA059E0086A4FD /* UserUpadteViewController.swift */; };
 		8F245DAD19FA06C50086A4FD /* parseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F245DAC19FA06C50086A4FD /* parseEvent.swift */; };
 		8F5DA9F219FC732100B2D0DB /* CheckedInEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5DA9F119FC732100B2D0DB /* CheckedInEventViewController.swift */; };
+		8F6505E719FD9C51009C2887 /* EventViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6505E619FD9C51009C2887 /* EventViewHeader.swift */; };
 		8F85549519FA238600699EC3 /* parseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85549419FA238600699EC3 /* parseUser.swift */; };
 		8F85549719FA273500699EC3 /* iBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85549619FA273500699EC3 /* iBeacon.swift */; };
 		8F85549919FAB7FE00699EC3 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85549819FAB7FE00699EC3 /* signUpViewController.swift */; };
 		8F85549B19FACE7F00699EC3 /* myEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85549A19FACE7F00699EC3 /* myEventsViewController.swift */; };
+		8FA427CD1A02C1F7007EE14C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA427CC1A02C1F7007EE14C /* MapViewController.swift */; };
+		8FA427CF1A02C25B007EE14C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA427CE1A02C25B007EE14C /* MapKit.framework */; };
 		8FDBA85019FAF670003E17B9 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDBA84F19FAF670003E17B9 /* EventDetailViewController.swift */; };
 		8FDBA85219FAF680003E17B9 /* AllEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDBA85119FAF680003E17B9 /* AllEventsViewController.swift */; };
 		8FDBA85419FB58A2003E17B9 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDBA85319FB58A2003E17B9 /* ControlViewController.swift */; };
@@ -59,10 +62,13 @@
 		8F245DAA19FA059E0086A4FD /* UserUpadteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserUpadteViewController.swift; sourceTree = "<group>"; };
 		8F245DAC19FA06C50086A4FD /* parseEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseEvent.swift; sourceTree = "<group>"; };
 		8F5DA9F119FC732100B2D0DB /* CheckedInEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckedInEventViewController.swift; sourceTree = "<group>"; };
+		8F6505E619FD9C51009C2887 /* EventViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewHeader.swift; sourceTree = "<group>"; };
 		8F85549419FA238600699EC3 /* parseUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseUser.swift; sourceTree = "<group>"; };
 		8F85549619FA273500699EC3 /* iBeacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iBeacon.swift; sourceTree = "<group>"; };
 		8F85549819FAB7FE00699EC3 /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		8F85549A19FACE7F00699EC3 /* myEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myEventsViewController.swift; sourceTree = "<group>"; };
+		8FA427CC1A02C1F7007EE14C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8FA427CE1A02C25B007EE14C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8FDBA84F19FAF670003E17B9 /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		8FDBA85119FAF680003E17B9 /* AllEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllEventsViewController.swift; sourceTree = "<group>"; };
 		8FDBA85319FB58A2003E17B9 /* ControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA427CF1A02C25B007EE14C /* MapKit.framework in Frameworks */,
 				CF4ED05812A655B9576D4FC7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,9 +127,11 @@
 		8F245D7C19FA03430086A4FD /* parseOperation */ = {
 			isa = PBXGroup;
 			children = (
+				8F245D8319FA03430086A4FD /* Main.storyboard */,
+				8FA427CC1A02C1F7007EE14C /* MapViewController.swift */,
 				8FDBA85319FB58A2003E17B9 /* ControlViewController.swift */,
 				8F245D7F19FA03430086A4FD /* AppDelegate.swift */,
-				8F245D8319FA03430086A4FD /* Main.storyboard */,
+				8F6505E619FD9C51009C2887 /* EventViewHeader.swift */,
 				8F245DAC19FA06C50086A4FD /* parseEvent.swift */,
 				8F85549419FA238600699EC3 /* parseUser.swift */,
 				8F85549619FA273500699EC3 /* iBeacon.swift */,
@@ -172,6 +181,7 @@
 		FAB2178DC2BB0774E43FDAA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FA427CE1A02C25B007EE14C /* MapKit.framework */,
 				CF2ECA34FAD0EB892409DE21 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -318,6 +328,7 @@
 				8F245DA919FA05930086A4FD /* EventUpdateViewController.swift in Sources */,
 				8FDBA85019FAF670003E17B9 /* EventDetailViewController.swift in Sources */,
 				8F06E05719FAEB9000EEF482 /* rsvpEventViewController.swift in Sources */,
+				8F6505E719FD9C51009C2887 /* EventViewHeader.swift in Sources */,
 				8F245D8219FA03430086A4FD /* ViewController.swift in Sources */,
 				8FDBA85419FB58A2003E17B9 /* ControlViewController.swift in Sources */,
 				8F85549519FA238600699EC3 /* parseUser.swift in Sources */,
@@ -327,6 +338,7 @@
 				8FDBA85219FAF680003E17B9 /* AllEventsViewController.swift in Sources */,
 				8F245D8019FA03430086A4FD /* AppDelegate.swift in Sources */,
 				8F06E05919FAEC3800EEF482 /* signInViewController.swift in Sources */,
+				8FA427CD1A02C1F7007EE14C /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

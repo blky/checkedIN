@@ -106,6 +106,15 @@
                                     <segue destination="aLV-vl-RiR" kind="push" identifier="toLogin" id="PvL-5R-LjB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjZ-Qp-Zxr">
+                                <rect key="frame" x="134" y="482" width="66" height="30"/>
+                                <state key="normal" title="map view">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iP8-dR-yTa" kind="modal" id="RAz-J3-Ec4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -205,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1Z-Zb-Wa8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="-380"/>
+            <point key="canvasLocation" x="939" y="-380"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="aEh-6M-mfs">
@@ -534,6 +543,39 @@
             </objects>
             <point key="canvasLocation" x="601" y="334"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Rii-w2-P0P">
+            <objects>
+                <viewController id="Hbi-nM-ooL" customClass="MapViewController" customModule="parseOperation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oh9-TG-tSA"/>
+                        <viewControllerLayoutGuide type="bottom" id="c1p-Z6-d9W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t3x-h2-9Qg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eSW-ae-rJu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fXS-fF-X11">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="qFN-un-RnC">
+                            <connections>
+                                <action selector="Done:" destination="Hbi-nM-ooL" id="0OX-xX-I9k"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="eSW-ae-rJu" id="D8D-Nu-ozg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x02-fs-NbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="481" y="-686"/>
+        </scene>
         <!--Event Update View Controller-->
         <scene sceneID="nBL-6i-abx">
             <objects>
@@ -618,7 +660,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYD-W0-Dow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3" y="-380"/>
+            <point key="canvasLocation" x="69" y="75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lfv-TO-twL">
@@ -637,6 +679,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGh-5g-l7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-817" y="-188"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rtu-Hc-aLd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iP8-dR-yTa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ozJ-w0-fMA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hbi-nM-ooL" kind="relationship" relationship="rootViewController" id="ZFR-wZ-Ans"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vhr-Ed-ucC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="-643"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
